@@ -17,3 +17,18 @@ variable "key_name" {
   description = "The name of the EC2 Key Pair to associate with the instance for SSH access."
   type        = string
 }
+
+variable "backend_bucket" {
+  description = "The name of the S3 bucket for storing Terraform state."
+  type        = string
+}
+
+variable "state_file_key" {
+  description = "The key (path) to the Terraform state file within the S3 bucket."
+  type        = string
+}
+
+variable "backend_region" {
+  description = "The AWS region where the S3 bucket for the Terraform backend is located."
+  type        = string
+}

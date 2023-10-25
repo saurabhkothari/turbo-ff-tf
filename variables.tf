@@ -1,15 +1,14 @@
+variable "aws_region" {
+  description = "The AWS region where the EC2 instance will be created."
+  type        = string
+}
+
 variable "ami_id" {
-  default = "ami-0c55b159cbfafe1f0"
+  description = "The ID of the Amazon Machine Image (AMI) to use for the EC2 instance."
+  type        = string
 }
 
 variable "instance_type" {
-  default = "t2.micro"
-}
-
-variable "key_name" {
-  default = "my-key-pair"
-}
-
-variable "instance_name" {
-  default = "example-instance"
+  description = "The type of EC2 instance to create."
+  type        = string
 }

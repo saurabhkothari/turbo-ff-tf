@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket = var.backend_bucket
-    key    = var.state_file_key
-    region = var.backend_region
-    encrypt = true
+    bucket = turbo-ff
+    key    = terraform.tfstate
+    region = us-east-1
+    encrypt = false
   }
 }

@@ -18,3 +18,7 @@ variable "key_name" {
   type        = string
 }
 
+variable "instance_name" {
+  description = "The custom name for the EC2 instance."
+  type        = string
+}

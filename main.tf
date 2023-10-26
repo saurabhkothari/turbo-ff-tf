@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = var.ami_id
   #instance_type = var.instance_type
-  instance_type = t2.micro
+  instance_type = "t2.micro"
   key_name      = var.key_name
 
   tags = {

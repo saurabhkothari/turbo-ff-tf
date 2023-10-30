@@ -1,15 +1,14 @@
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-1"
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami_id
-  #instance_type = var.instance_type
+  ami           = "ami-067d1e60475437da2"
   instance_type = "t2.micro"
-  key_name      = var.key_name
+  key_name      = "turbo-saurabh"
 
   tags = {
-    Name = var.instance_name  # Custom name for the EC2 instance
+    Name = "turbo-ff-sample" 
   }
 }
 
